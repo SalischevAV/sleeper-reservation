@@ -7,12 +7,12 @@ COPY package-lock.json ./
 COPY tsconfig.json tsconfig.json
 COPY nest-cli.json nest-cli.json
 
-COPY apps/auth apps/auth
+COPY apps/notifications apps/notifications
 COPY libs libs
 
 RUN npm install
 
-RUN npm run build auth
+RUN npm run build notifications
 
 FROM node:alpine as production
 
@@ -28,4 +28,4 @@ RUN npm install --prod
 
 COPY --from=development /usr/src/app/dist ./dist
 
-CMD ["node", "dist/apps/auth/main"]
+CMD ["node", "dist/apps/notifications/main"]
