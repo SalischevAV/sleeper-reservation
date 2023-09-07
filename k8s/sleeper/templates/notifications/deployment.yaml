@@ -1,0 +1,39 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: notificcations
+  name: notificcations
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: notificcations
+  template:
+    metadata:
+      labels:
+        app: notificcations
+    spec:
+      containers:
+      - image: europe-central2-docker.pkg.dev/sleeper-396911/notifications/production
+        name: notifications
+        env:
+          - name: PORT
+            value: '3000'
+          - name: GOOGLE_OATH_CLIENT_ID
+            value: 866665208926-0t7833pdfbvq0vaam7ud67srbj54orn9.apps.googleusercontent.com
+          - name: SMTP_USER
+            value: a45189497@gmail.com
+          - name: GOOGLE_OATH_CLIENT_SECRET
+            valueFrom:
+              secretKeyRef:
+                name: google
+                key: clientSecret
+          - name: GOOGLE_OATH_REFRESH_TOKEN
+            valueFrom:
+              secretKeyRef:
+                name: google
+                key: refreshToken
+        ports:
+          - containerPort: 3000
+

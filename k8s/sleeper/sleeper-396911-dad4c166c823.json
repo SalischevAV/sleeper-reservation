@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "sleeper-396911",
+  "private_key_id": "dad4c166c823d903701741b5449ff9df9d2ffbd4",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCMqsxaAuXy9D0+\nLGtDy4wLFciueUr9oIY27M7PXfb20gBu5jhkqGtq32kdqfxem1EAC/VQC7S1n9To\nudrTdeexjwKFn6VDcAlk86sXZ1YXf9iSYLkewcwmLFDTIbrWmyEpISbzRz+wz1cG\ncsdtsofCDuGGvYkbAkQIDjQB8qJ7RxivlsL+NspZdLw9PBCr+E/QZOcp7OHjdzwQ\nrs0+auTfFOMCE+a+URWSSBlaidFYA9rxhf1iCmOKDb+aw8DXPBdniFpRxjhmw4kI\nKgNrrmGOe9Fufmiyu5mIYYf9VkmgBqnYjUY0JpEord1Rj7/ocJGk4fID2AsgRilb\nYcfUZyBLAgMBAAECggEAJgRDFlCSNQctRhBbLQdl4dkRU5YUXldz7oQxoHmUtUAs\nPcyakRmzbj7S+eFnA2qWiZyxv+BqBmwb7onMSjojVCmCVPrAf2lYIKB6LOkQq2kx\n7t2VKmrV8bsoXOdQx49FdwgurrEi1XYz3tpGa69EYX4EFZZD57jFCihMhfo9T3OQ\n9Hv0CFybc8KJ9DOVspQAOSIx4Hrg3aXwSD6RRCWEeozY8q7gUATlKvvQBhDCwnac\nitgBHzwDcjE5UbC14LjwvqON+6JwKxeERdjXARGu6NP/CywUaz+7Ij/XDHbHqRZP\nmSYjagjig0N2AFvyHl0EAyvclnxj4RUycoFA9zq/AQKBgQC/jh3BFKmvjA/K5/T3\nffGn5jmwiEMoPPpZ1A/vPZBaJA+SdDajQMK+5vKBagiKVqzj9E47JZR2Q7eqY28f\nzAifRvt9HdzjizaPupi0UksiDiSE4lwflYJXi8JhBZUFVkDFnS1U4jV9DfGTjPVu\nR+qOfmrQPzou28yQzSExCch2EwKBgQC7/edssKcudCieNwTQ8F8vtAUg2tR88Cj3\nxRP58i/AJk3g3U2cTv+UL139qjEipsiGk+5HGoHp1PQYaV47gHb5hVDJU5ZfEY2t\nQgvrhBor7IbS60AfnQxNSio71Y98t2rh7VvUaR7qw+2kmKLW6ZzfTYykZL8+IAli\nywTf+hbT6QKBgQC6XrgeSk9KB/i5jvLs9PFwTPPmCL1mYeWmDkgumXRf72PjNwSN\n041mlWZueU6z4d62rtSKgWavpfUFZ1cP1cCxzysSMULfdGvybTbzgnmtOZtYWrAM\n3rcBHG5TXU3+8kt0uRcI1kn6UN2wlF2aHYhdeSvNTyb5vkqKu7nGb2FFVwKBgQCY\noFO70tBozrYLfe/TEtS1Dhr7ya6qoPEh+Ed3rkFGZ9LitcnFFf46eRp+UCcEUxSK\n7p+N6t9+0P48s49mD66IdsxYKBz1onK8L9sto1r8PlRX+ddd00uhlI0ldwW/48pL\nE0Jy+cW4JMpTz/ilM5XBVlzRO1ppPelg5CNZFNpjwQKBgFDRXWCPo0olnlAgPTId\nEPVzK6mLo1YjIanYgo/xQSOuwPNMPX4qbYV5+gcGKiJGKJ+PSQ7gl+n5LEVR2z2H\n09rwURPmEC8OYMOkUEvYxuspZdI5KVo8aY744UeZK/3e21HWUfsq8fq1MEoG8a0U\nz8Pp0Iq7xVnnzPh/8AHBAiH5\n-----END PRIVATE KEY-----\n",
+  "client_email": "artifact-registry-pull@sleeper-396911.iam.gserviceaccount.com",
+  "client_id": "115697310347400177162",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/artifact-registry-pull%40sleeper-396911.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
