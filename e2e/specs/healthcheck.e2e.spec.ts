@@ -12,6 +12,15 @@ describe('Health', () => {
     expect(response.ok).toBeTruthy();
   });
 
+  test('Auth ping', (done) => {
+    ping({ address: 'auth', port: 3001 }, (err) => {
+      if (err) {
+        fail();
+      }
+      done();
+    });
+  });
+
   test('Payments', (done) => {
     ping({ address: 'payments', port: 3003 }, (err) => {
       if (err) {
