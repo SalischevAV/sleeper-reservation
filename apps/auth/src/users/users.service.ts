@@ -21,8 +21,8 @@ export class UsersService {
     const user = new User({
       ...createUserDto,
       password: hashedPassword,
-      roles: createUserDto.roles?.map(roleDto =>new Role(roleDto))
-    })
+      roles: createUserDto.roles?.map((roleDto) => new Role(roleDto)),
+    });
     return await this.usersRepository.create(user);
   }
 
@@ -51,6 +51,6 @@ export class UsersService {
   }
 
   async getUser(getUserDto: GetUserDto) {
-    return this.usersRepository.findOne(getUserDto);
+    return this.usersRepository.findOne(getUserDto, { roles: true });
   }
 }
