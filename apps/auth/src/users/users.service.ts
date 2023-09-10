@@ -1,3 +1,4 @@
+import { Role, User } from '@app/common';
 import { CreateUserDto } from './dto/create-user.dto';
 import { GetUserDto } from './dto/get-user.dto';
 import { UsersRepository } from './users.repository';
@@ -17,10 +18,12 @@ export class UsersService {
   async create(createUserDto: CreateUserDto) {
     await this.validateCreateUserDto(createUserDto);
     const hashedPassword = await bcrypt.hash(createUserDto.password, 10);
-    return await this.usersRepository.create({
+    const user = new User({
       ...createUserDto,
       password: hashedPassword,
-    });
+      roles: createUserDto.roles?.map(roleDto =>new Role(roleDto))
+    })
+    return await this.usersRepository.create(user);
   }
 
   private async validateCreateUserDto(createUserDto: CreateUserDto) {
