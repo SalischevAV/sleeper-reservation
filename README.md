@@ -4,3 +4,4 @@ To use:
 2. TCP transport and mongoDB, hosting by SKE - git checkout aws
 3. TCP transport and TypeORM, hosting by GKE - git checkout add_type_orm
 4. RabbitMQ transport transport and Mongoose, hosting by GKE - git checkout add_rabbit_mq
+5. GraphQL(Apollo Federation) - git checkout add_graph_ql
